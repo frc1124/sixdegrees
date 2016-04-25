@@ -3,7 +3,7 @@
 > Source code for http://sixdegrees.uberbots.org/
 
 ## Deprecation
-Unfortunately, The Blue Alliance has changed moved its database format away from SQL since this was written (many years ago), so it is not feasable to update the data used.  
+Unfortunately, The Blue Alliance has moved its database format away from SQL since this was written (many years ago), so it is not feasable to update the data used.  
 
 ## About Six Degrees
 Six Degrees of FIRST is a tool to find the shortest path between two FIRST teams. Two teams are considered linked together if they have shared an alliance in a past match. Then, the number of links between the two teams are calculated are the final list is output.
