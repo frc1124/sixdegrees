@@ -134,7 +134,7 @@ if(!isset($message) && isset($_GET['start']) && isset($_GET['end'])){
 		$row = mysql_fetch_array($query);
 		$count = $teams[$endTeam] - $i;
 		
-		echo "<p>$count. <a href=\"http://www.thebluealliance.net/tbatv/team/".$marker."\">FRC Team #$marker".($row["informalname"]==""?($row["name"]==""?"":", ".$row["name"]):", ".$row["informalname"])."</a></p>";
+		echo "<p>$count. <a href=\"http://www.thebluealliance.com/team/".$marker."\">FRC Team #$marker".($row["informalname"]==""?($row["name"]==""?"":", ".$row["name"]):", ".$row["informalname"])."</a></p>";
 		
 		
 		if($i!=$teams[$endTeam]){
@@ -143,7 +143,7 @@ if(!isset($message) && isset($_GET['start']) && isset($_GET['end'])){
 		  
 		  $row = mysql_fetch_array($query);
 		  
-		  echo "<p><a href=\"http://thebluealliance.net/tbatv/event/".$row["year"].$row["short"]."\">".(($row["matchTitle"]=="")?"Qualification #".$row["number"]:$row["matchTitle"])." at ".$row["year"]." ".$row["eventTitle"]."</a></p>";
+		  echo "<p><a href=\"http://thebluealliance.com/event/".$row["year"].$row["short"]."\">".(($row["matchTitle"]=="")?"Qualification #".$row["number"]:$row["matchTitle"])." at ".$row["year"]." ".$row["eventTitle"]."</a></p>";
 		  
 		  $marker = mysql_real_escape_string($from[$marker]);
 		}}
@@ -173,7 +173,7 @@ while($row = mysql_fetch_array($q)){
 </form>
 </div>
 <div style="position:fixed;bottom:0;text-align: center;width:100%;text-decoration:none;">
-<a href="about.php" class="underline">About</a> | <a href="http://uberbots.org" class="underline">The UberBots</a> | Thanks to <a href="http://www.thebluealliance.net/" class="underline">The Blue Alliance</a> 
+<a href="about.php" class="underline">About</a> | <a href="http://uberbots.org" class="underline">The UberBots</a> | Thanks to <a href="http://www.thebluealliance.com/" class="underline">The Blue Alliance</a> 
 </div>
 </body>
 
